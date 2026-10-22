@@ -1,5 +1,7 @@
 # 3D Force Vector Resolution & Resultant Interactive Simulation
 
+👉 **[🚀 Launch Live 3D Interactive Simulation](https://Kareemalaa233.github.io/3d-forces-simulation/)**
+
 An interactive, dependency-free 3D browser simulation built to help engineering statics students visualize 3D force vector resolution, projection planes, coordinate direction angles, and resultant force calculation.
 
 ## 🎯 Problem Statement (Question 4)
