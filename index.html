@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Forces Interactive Simulation</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Full-Screen 3D Canvas -->
+  <canvas id="simCanvas"></canvas>
+
+  <!-- Minimal Floating Control Bar (Bottom Center) -->
+  <div class="ctrl-pill">
+    <button id="btn-undo" disabled class="sim-btn btn-amber" title="Undo latest resolution">
+      ↩ Undo
+    </button>
+
+    <button id="btn-reset" class="sim-btn btn-slate" title="Reset forces">
+      Reset
+    </button>
+
+    <span class="divider">|</span>
+
+    <!-- Show / Hide Force Toggles -->
+    <button id="btn-toggle-f1" class="sim-btn btn-sky-on" title="Show / Hide Force F₁">
+      👁 F<sub>1</sub>
+    </button>
+
+    <button id="btn-toggle-f2" class="sim-btn btn-emerald-on" title="Show / Hide Force F₂">
+      👁 F<sub>2</sub>
+    </button>
+
+    <button id="btn-fr" class="sim-btn btn-fuchsia-off" title="Toggle Resultant Force F_R">
+      Resultant F<sub>R</sub>
+    </button>
+
+    <span class="divider">|</span>
+
+    <!-- Extra-Wide Zoom Controls (15% to 600%) -->
+    <button id="btn-zoom-out" class="btn-circle" title="Zoom Out">−</button>
+    <input id="zoom-slider" type="range" min="15" max="600" value="100" class="zoom-slider" title="Zoom (15% - 600%)" />
+    <button id="btn-zoom-in" class="btn-circle" title="Zoom In">+</button>
+    <button id="btn-zoom-reset" class="btn-zoom-pct" title="Click to reset zoom to 100%">100%</button>
+  </div>
+
+  <script src="js/simulation.js"></script>
+</body>
+</html>
